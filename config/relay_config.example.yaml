@@ -1,0 +1,27 @@
+# Hermes Relay 配置示例
+# 复制此文件为 config.yaml 并修改配置
+
+# WebSocket 服务端配置
+ws_host: "0.0.0.0"
+ws_port: 8765
+
+# 飞书配置
+feishu:
+  app_id: ""           # 飞书应用 ID
+  app_secret: ""       # 飞书应用密钥
+  domain: "feishu"     # feishu(中国) / lark(国际)
+  encrypt_key: ""      # 加密密钥 (可选)
+  verification_token: ""  # 验证令牌 (可选)
+
+# 设备管理
+heartbeat_timeout: 60  # 心跳超时时间(秒)
+
+# 审批配置
+approval_timeout: 300  # 审批超时时间(秒)
+
+# 日志配置
+log_level: "INFO"  # DEBUG/INFO/WARNING/ERROR
+
+# 安全配置
+auth_token: ""       # 设备认证令牌 (可选)
+enable_encryption: false  # 是否启用加密

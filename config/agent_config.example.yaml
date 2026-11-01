@@ -1,0 +1,25 @@
+# Hermes Relay Agent 配置示例
+# 复制此文件为 config.yaml 并修改配置
+
+# 设备信息
+device_id: ""           # 设备 ID (留空自动生成)
+device_name: ""         # 设备名称 (留空使用主机名)
+device_group: "default" # 设备组
+
+# 服务端连接
+server_url: "ws://localhost:8765"  # 中转站地址
+auth_token: ""                     # 认证令牌 (可选)
+
+# 心跳配置
+heartbeat_interval: 30  # 心跳间隔(秒)
+
+# 命令配置
+command_timeout: 60     # 命令超时时间(秒)
+max_concurrent_commands: 5  # 最大并发命令数
+
+# 日志配置
+log_level: "INFO"  # DEBUG/INFO/WARNING/ERROR
+
+# 重连配置
+reconnect_interval: 5   # 重连间隔(秒)
+max_reconnect_attempts: 0  # 最大重连次数 (0=无限)
